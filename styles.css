@@ -16,6 +16,7 @@ body {
   max-width: 340px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .card-image-container {
