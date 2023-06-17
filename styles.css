@@ -1,0 +1,118 @@
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image-container {
+  background-image: url("./images/image-product-mobile.jpg");
+  background-size: cover;
+  min-height: 250px;
+  width: 100%;
+}
+
+.card-text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+h1 > span {
+  font-size: 12px;
+  text-transform: uppercase;
+  display: block;
+  color: hsla(228, 12%, 48%, 0.527);
+  letter-spacing: 4px;
+}
+
+h1 + p {
+  color: hsla(228, 12%, 48%, 0.527);
+  margin: 20px 0;
+  font-size: 14px;
+  width: 92%;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 16px 0;
+}
+
+.price > span {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: hsla(228, 12%, 48%, 0.527);
+}
+
+a.button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  display: block;
+  text-align: center;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: "Outfit", serif;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+a.button:hover {
+  background-color: hsl(158, 36%, 26%);
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+  }
+
+  .card-image-container {
+    background-size: cover;
+    background-image: url("./images/image-product-desktop.jpg");
+    width: 55%;
+  }
+
+  .card-text-container {
+    width: 45%;
+    padding: 32px;
+  }
+
+  h1 > span {
+    margin-bottom: 8px;
+  }
+}
